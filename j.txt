@@ -1,0 +1,6 @@
+el usuario ingresa un parrafo de 100 caracteres, quiero saber la cantidad de vocales, consonantes, cantidad de palabras palindromes, y palindromes que superan 7 caracteres
+
+
+el usuario ingresa rango de fechas, quiero saber cuantos domingo 15 sucedieron hasta la actualidad
+
+elabora un programa donde el usuario determine el tamaño de un vector o una matriz, quiero saber el maximo comun divisor y el minimo comun multiplo de todos los numeros ingresados al compararlo con 13 y 26 desde 2500 hasta 2723
