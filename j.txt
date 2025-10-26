@@ -4,3 +4,7 @@ el usuario ingresa un parrafo de 100 caracteres, quiero saber la cantidad de voc
 el usuario ingresa rango de fechas, quiero saber cuantos domingo 15 sucedieron hasta la actualidad
 
 elabora un programa donde el usuario determine el tamaño de un vector o una matriz, quiero saber el maximo comun divisor y el minimo comun multiplo de todos los numeros ingresados al compararlo con 13 y 26 desde 2500 hasta 2723
+
+/* Elabora un programa que ingrese el usuario cualquier cantidad de numeros, generelo de forma aleatoria y guardelo en un arreglo,
+que se ordene de mayor a menos, buscar el promedio, buscar el numero primo superior e inferior mas cercano, estos dos numeros
+sacarle el maximo comun divisor*/
