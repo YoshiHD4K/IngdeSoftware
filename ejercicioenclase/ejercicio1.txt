@@ -1,0 +1,33 @@
+"""
+Ejercicio tipo examen
+
+Simulador de boletos de tren con descuento
+
+EL programa debe cotizar boletos de tren en precio de 50$, 
+
+entrada de datos: N pasajeros y almacenar los datos
+
+Edad de pasajero, destino, paga con tarjeta? bool
+
+Descuentos:
+
+La regla 3 sobre el precio ya descontado de la regla 1 y 2
+
+regla 1: menor de 18 años recibe descuento de 20%
+
+regla 2: Mayor de 65 años recibe 30%
+
+regla 3: tiene tarjeta 10%
+
+Debe calcular
+
+Precio final de boleto totales
+suma total de descuentos
+
+
+debe imprimir un reporte que incluya tabla detallada que incluya 
+promedio general de todos los boletos cotizados
+monto total de descuento aplicado
+
+
+"""

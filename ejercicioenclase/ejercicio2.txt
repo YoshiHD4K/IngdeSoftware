@@ -1,0 +1,14 @@
+Validador de numero de tarjetas con el algoritmo de luhm
+
+Requerimentos:
+
+Debe implementar el algoritmo de luhm para validar una secuencia de 16 digitos, ingresado como una cadena de caracteres
+
+Entrada 
+
+ingresar la secuencia de digitos como una cadena de texto, la cadena debe tener 16 caracteres y deben ser numericos
+
+algoritmo
+interaccion inversa
+duplicacion condicional duplicar el valor de cada segundo digito encontrado empezando desde el penultimo digito
+correcion de digito, si el resultado es de dos digitos sea
