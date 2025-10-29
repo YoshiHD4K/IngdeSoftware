@@ -1,4 +1,4 @@
-class Boleto:
+class Boleto: # Clase para representar un boleto de viaje
     def __init__(self):
         self.edad = 0
         self.destino = ""
@@ -7,13 +7,13 @@ class Boleto:
         self.descuento = 0.0
 
 
-def comprar_boletos(ListaBoletos, num_boletos):
+def comprar_boletos(ListaBoletos, num_boletos): # Función para comprar boletos
     for i in range(num_boletos):
         boleto = Boleto()
         print(f"\nComprando boleto {i + 1}:")
         boleto.edad = int(input("Ingrese la edad del pasajero: "))
         boleto.destino = input("Ingrese el destino: ")
-        while True:
+        while True: # Solicita si el pago será con tarjeta, validando la entrada
             tarjeta_input = input("¿Pagará con tarjeta? (s/n): ").lower()
             if tarjeta_input in ['s', 'n']:
                 boleto.tarjeta = tarjeta_input == 's'
@@ -26,36 +26,35 @@ def comprar_boletos(ListaBoletos, num_boletos):
         elif boleto.edad >= 65:
             boleto.descuento += boleto.precio * 0.3  # 30% de descuento para adultos mayores
         if boleto.tarjeta:
-            boleto.descuento += (boleto.precio - boleto.descuento) * 0.1  # 10% de descuento por pago con tarjeta
-        ListaBoletos.append(boleto)
+            boleto.descuento += (boleto.precio - boleto.descuento) * 0.1  # 10% de descuento por pago con tarjeta, aplicado sobre el precio después de otros descuentos
+        ListaBoletos.append(boleto) # Agrega el boleto a la lista de boletos comprados
         print("Boleto comprado con éxito.")
 
-def ver_boletos_comprados(ListaBoletos):
+def ver_boletos_comprados(ListaBoletos): # Función para ver los boletos comprados
     print("\n\n")
-    if not ListaBoletos:
+    if not ListaBoletos: # Verifica si la lista de boletos está vacía
         print("No se han comprado boletos aún.")
         return
-    for i, boleto in enumerate(ListaBoletos, start=1):
-        precio_final = boleto.precio - boleto.descuento
+    for i, boleto in enumerate(ListaBoletos, start=1): # Muestra los detalles de cada boleto comprado
+        precio_final = boleto.precio - boleto.descuento # Calcula el precio final después de descuentos
         print(f"Boleto {i}: Destino: {boleto.destino}, Edad: {boleto.edad}, "
               f"Pago con tarjeta: {'Sí' if boleto.tarjeta else 'No'}, "
               f"Precio final: ${precio_final:.2f}")
 
-def ver_reporte_ventas(ListaBoletos):
-    if not ListaBoletos:
+def ver_reporte_ventas(ListaBoletos): # Función para ver el reporte de ventas
+    if not ListaBoletos: # Verifica si la lista de boletos está vacía
         print("No se han vendido boletos aún.")
         return
-    
-    total_ventas = sum(boleto.precio - boleto.descuento for boleto in ListaBoletos)
-    total_ventas /= len(ListaBoletos)  # Promedio de ventas
-    total_descuentos = sum(boleto.descuento for boleto in ListaBoletos)
 
-    print(f"Total de ventas: ${total_ventas:.2f}")
+    total_ventas = sum(boleto.precio - boleto.descuento for boleto in ListaBoletos) / len(ListaBoletos) # Promedio de ventas totales (precio menos descuento)
+    total_descuentos = sum(boleto.descuento for boleto in ListaBoletos) # Suma total de descuentos otorgados
+
+    print(f"Total de ventas: ${total_ventas:.2f}") 
     print(f"Total de descuentos: ${total_descuentos:.2f}")
 
-def menu():
+def menu(): # Función del menú principal
     ListaBoletos = []
-    while True:
+    while True: # Bucle infinito para mostrar el menú hasta que el usuario decida salir
         print("\n\nOpciones:")
         print("1. Comprar Boletos")
         print("2. Ver Boletos Comprados")
@@ -63,18 +62,17 @@ def menu():
         print("4. Salir")
         opcion = input("Seleccione una opción (1-4): ")
         match opcion:
-            case "1":
+            case "1": # Opción para comprar boletos
                 num_boletos = int(input("¿Cuántos boletos desea comprar? "))
                 comprar_boletos(ListaBoletos, num_boletos)
-            case "2":
+            case "2": # Opción para ver los boletos comprados
                 ver_boletos_comprados(ListaBoletos)
-            case "3":
+            case "3": # Opción para ver el reporte de ventas
                 ver_reporte_ventas(ListaBoletos)
-                pass
-            case "4":
+            case "4": # Opción para salir del programa
                 print("Saliendo del programa.")
                 return
-            case _:
+            case _: # Opción inválida
                 print("Opción no válida. Intente de nuevo.")
 
 
