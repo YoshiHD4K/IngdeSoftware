@@ -13,18 +13,25 @@ def comprar_boletos(ListaBoletos, num_boletos):
         print(f"\nComprando boleto {i + 1}:")
         boleto.edad = int(input("Ingrese la edad del pasajero: "))
         boleto.destino = input("Ingrese el destino: ")
-        boleto.tarjeta = input("¿Este boleto se paga con tarjeta? (s/n): ").lower() == "s"
+        while True:
+            tarjeta_input = input("¿Pagará con tarjeta? (s/n): ").lower()
+            if tarjeta_input in ['s', 'n']:
+                boleto.tarjeta = tarjeta_input == 's'
+                break
+            else:
+                print("Entrada no válida. Por favor ingrese 's' o 'n'.")
         boleto.precio = 50.0  # Precio base del boleto
         if boleto.edad < 18:
             boleto.descuento += boleto.precio * 0.2  # 20% de descuento para menores de edad
         elif boleto.edad >= 65:
             boleto.descuento += boleto.precio * 0.3  # 30% de descuento para adultos mayores
         if boleto.tarjeta:
-            boleto.descuento += boleto.precio * 0.1  # 10% de descuento por pago con tarjeta
+            boleto.descuento += (boleto.precio - boleto.descuento) * 0.1  # 10% de descuento por pago con tarjeta
         ListaBoletos.append(boleto)
         print("Boleto comprado con éxito.")
 
 def ver_boletos_comprados(ListaBoletos):
+    print("\n\n")
     if not ListaBoletos:
         print("No se han comprado boletos aún.")
         return
@@ -38,9 +45,13 @@ def ver_reporte_ventas(ListaBoletos):
     if not ListaBoletos:
         print("No se han vendido boletos aún.")
         return
-    total_ventas = sum(boleto.precio - boleto.descuento for boleto in ListaBoletos)
-    print(f"Total de ventas: ${total_ventas:.2f}")
     
+    total_ventas = sum(boleto.precio - boleto.descuento for boleto in ListaBoletos)
+    total_ventas /= len(ListaBoletos)  # Promedio de ventas
+    total_descuentos = sum(boleto.descuento for boleto in ListaBoletos)
+
+    print(f"Total de ventas: ${total_ventas:.2f}")
+    print(f"Total de descuentos: ${total_descuentos:.2f}")
 
 def menu():
     ListaBoletos = []
@@ -58,7 +69,7 @@ def menu():
             case "2":
                 ver_boletos_comprados(ListaBoletos)
             case "3":
-                #ver_reporte_ventas()
+                ver_reporte_ventas(ListaBoletos)
                 pass
             case "4":
                 print("Saliendo del programa.")
