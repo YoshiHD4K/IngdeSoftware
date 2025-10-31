@@ -1,0 +1,32 @@
+Estacionamiento Moya
+
+Debe tener tarifa plana
+Quiero precio por horas
+Quiero puesto fijo
+
+Carros, Motos, camionetas, gandolas
+
+Una gandola mide dos camionetas
+
+una camioneta mide dos Carros
+
+A perdida del ticket se le cobra el doble
+
+si pernocta el triple
+
+Formulario para pernoctar
+
+
+10 puestos para Motos
+
+
+total de vehiculos por sus tipos
+
+monto en dolares y en bs
+
+total de motos y el monto en bs
+
+
+Primeras dos letras del nombre y apellido para el usuario
+
+
