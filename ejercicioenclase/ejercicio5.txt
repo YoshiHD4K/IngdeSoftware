@@ -1,0 +1,21 @@
+un acceso a un servidor altamente sensible con seguridades estrictas que permite el acceso de dos maneras
+
+Se concede acceso si el usuario pasa la doble autenticacion
+Se concede acceso si la conexion esta en la lista blanca
+
+Contraseña correcta
+Pin de seguridad
+Direccion IP
+
+tabla de la verdad
+
+Contraseña correcta?        Pin         Lista blanca                A&B&C
+        C                    B              A                       
+        V                    V              V                         V
+        V                    V              F                         F
+        V                    F              V                         F
+        V                    F              F                         F
+        F                    V              V                         F
+        F                    V              F                         F
+        F                    F              V                         F
+        F                    F              F                         F
