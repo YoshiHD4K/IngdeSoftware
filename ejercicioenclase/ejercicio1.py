@@ -1,3 +1,27 @@
+"""
+
+Ejercicio 1: Sistema de Venta de Boletos de Viaje
+
+Desarrolla un programa en Python que permita a los usuarios comprar boletos de viaje.
+El programa debe incluir las siguientes funcionalidades:
+
+1. Comprar Boletos:
+- Solicitar al usuario la cantidad de boletos que desea comprar.
+- Para cada boleto, solicitar la edad del pasajero, el destino y si el pago será con tarjeta.
+- Calcular el precio del boleto considerando:
+  - Precio base: $50
+  - Descuento del 20% para menores de 18 años.
+  - Descuento del 30% para adultos mayores (65 años o más).
+  - Descuento adicional del 10% si el pago es con tarjeta.
+- Almacenar los detalles de cada boleto en una lista.
+2. Ver Boletos Comprados:
+- Mostrar una lista de todos los boletos comprados con sus detalles (edad, destino, método de pago, precio final).
+3. Ver Reporte de Ventas:
+- Calcular y mostrar el total de ventas y el total de descuentos otorgados.
+- Mostrar el promedio de ventas por boleto vendido.
+
+"""
+
 class Boleto: # Clase para representar un boleto de viaje
     def __init__(self):
         self.edad = 0
