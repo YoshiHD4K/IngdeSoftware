@@ -1,3 +1,11 @@
+"""
+
+Ejercicio: Calcular el MCM y MCD de una lista de números aleatorios generados entre 2500 y 2723.
+El programa solicitará al usuario la cantidad de números a generar, luego generará los números aleatorios,
+y finalmente mostrará el MCM y MCD de cada número con respecto a 13 y 26.
+
+"""
+
 from random import randint
 from math import lcm, gcd
 

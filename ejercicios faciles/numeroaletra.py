@@ -1,3 +1,12 @@
+"""
+
+Ejercicio: Convertir un número en su representación en letras. 
+El programa solicitará al usuario un número entre 0 y 9999
+y mostrará su equivalente en palabras.
+
+"""
+
+
 def numero_a_letra(numero):
     strunidades = ["", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"]
     strdecenas = ["", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"]

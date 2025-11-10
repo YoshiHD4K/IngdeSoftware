@@ -1,3 +1,11 @@
+"""
+
+Ejercicio 2: Validación de números de tarjeta de crédito usando el algoritmo de Luhn.
+Desarrolla un programa en Python que valide números de tarjeta de crédito utilizando el algoritmo de Luhn.
+El programa debe solicitar al usuario que ingrese un número de tarjeta de crédito y verificar si es válido o no.
+
+"""
+
 while True:
     numero_tarjeta = input("Ingrese el número de tarjeta de crédito (o 'salir' para terminar): ") # Solicita al usuario que ingrese un número de tarjeta de crédito o 'salir' para terminar
     if numero_tarjeta.lower() == 'salir':

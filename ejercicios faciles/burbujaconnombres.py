@@ -1,3 +1,11 @@
+"""
+
+Ejercicio: Implementar el algoritmo de burbuja para ordenar una lista de nombres ingresados por el usuario.
+El programa solicitará al usuario la cantidad de nombres a ingresar, luego pedirá cada nombre y finalmente 
+mostrará la lista ordenada alfabéticamente según las dos primeras letras de cada nombre.
+
+"""
+
 tamaño = int(input("Introduce la cantidad de nombres que seran ingresados: "))
 
 arreglo = []

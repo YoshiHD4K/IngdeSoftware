@@ -1,3 +1,12 @@
+"""
+
+Ejercicio: Convertir un número de 5 a 7 cifras en su representación en números romanos.
+El programa solicitará al usuario un número entre 10000 y 9999999
+y mostrará su equivalente en números romanos.
+
+"""
+
+
 def convertir_a_romano(numero):
     romano = ""
     numeros_romanos = {

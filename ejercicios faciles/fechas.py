@@ -1,7 +1,15 @@
+"""
+
+Contar sábados 15 desde una fecha dada hasta hoy.
+Desarrolla un programa en Python que solicite al usuario una fecha (día, mes y año) y verifique si es válida.
+El programa debe contar cuántos sábados 15 han transcurrido desde esa fecha hasta la fecha actual.
+
+"""
+
 import validaciones as val
 import datetime as dt
 
-def contardias(fecha):
+def contardias(fecha: dt.date):
     fecha_actual = dt.date.today()
     contador = 0
     # Ajustar la fecha al día 15 del mes correspondiente

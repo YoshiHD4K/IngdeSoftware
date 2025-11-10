@@ -1,4 +1,12 @@
-#Encontrar todas las tripletas pitagoricas primitivas donde la hipotenusa sea N
+"""
+
+Ejercicio 6: Tripletas pitagóricas primitivas.
+Desarrolla un programa en Python que encuentre todas las tripletas pitagóricas primitivas (a, b, c)
+donde c es un número entero positivo dado por el usuario. Una tripleta pitagórica primitiva satisface la
+ecuación a^2 + b^2 = c^2, y a, b, c son coprimos (su máximo común divisor es 1).
+
+"""
+
 import math
 
 def tripletas_pitagoricas_primitivas(N):

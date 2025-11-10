@@ -1,7 +1,7 @@
 """
-/* Elabora un programa que ingrese el usuario cualquier cantidad de numeros, generelo de forma aleatoria y guardelo en un arreglo,
-que se ordene de mayor a menos, buscar el promedio, buscar el numero primo superior e inferior mas cercano, estos dos numeros
-sacarle el maximo comun divisor*/
+Elabora un programa que ingrese el usuario cualquier cantidad de numeros, generelo de forma aleatoria y 
+guardelo en un arreglo, que se ordene de mayor a menos, buscar el promedio, buscar el numero primo superior 
+e inferior mas cercano, estos dos numeros, sacarle el maximo comun divisor
 
 """
 import random

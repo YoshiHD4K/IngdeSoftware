@@ -1,3 +1,12 @@
+"""
+
+Ejercicio: Determinar si un número de hasta 5 cifras es un palíndromo.
+El programa solicitará al usuario un número entre 1 y 99999
+y verificará si es un palíndromo.
+
+"""
+
+
 def es_palindromo(numero):
     str_num = str(numero)
     return str_num == str_num[::-1]

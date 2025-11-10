@@ -1,3 +1,12 @@
+"""
+
+Ejercicio: Implementar el algoritmo de burbuja para ordenar una lista de números ingresados por el usuario.
+El programa solicitará al usuario la cantidad de números a ingresar, luego pedirá cada número y finalmente
+mostrará la lista ordenada en orden descendente.
+
+"""
+
+
 # Algoritmo de ordenamiento burbuja (Bubble Sort) en orden descendente
 
 # El usuario ingresa el tamaño del arreglo

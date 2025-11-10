@@ -1,3 +1,10 @@
+"""
+
+Ejercicio: Calcular el radio de un círculo a partir de su diámetro.
+
+"""
+
+
 def calcular_radio(diametro):
     return diametro / 2
 

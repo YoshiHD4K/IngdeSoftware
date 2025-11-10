@@ -1,3 +1,12 @@
+"""
+
+Ejercicio: Análisis de un párrafo para contar vocales, consonantes y detectar palíndromos.
+El programa solicitará al usuario un párrafo con al menos 100 caracteres,
+y realizará el análisis solicitado.
+
+"""
+
+
 def es_palindromo(palabra):
     palabra = palabra.lower()
     if palabra.isalpha() == False:

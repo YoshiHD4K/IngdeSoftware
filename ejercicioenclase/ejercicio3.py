@@ -1,3 +1,13 @@
+"""
+
+Ejercicio 3: Secuencia de Fibonacci y números primos.
+Desarrolla un programa en Python que realice las siguientes tareas:
+1. Calcular el n-ésimo término de la secuencia de Fibonacci utilizando una función recursiva.
+2. Solicitar al usuario un rango de términos (inicio y fin) y mostrar todos los términos de Fibonacci en ese rango.
+3. Identificar y contar cuántos de esos términos son números primos.
+
+"""
+
 def fibonacci_enesimo(n): # Función para calcular el n-ésimo término de la secuencia de Fibonacci
     if n == 0:
         return 0

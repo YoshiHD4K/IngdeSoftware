@@ -1,4 +1,13 @@
-#Contar las palabras en un parrafo y eliminar signos de puntuacion
+"""
+
+Ejercicio: Conteo de palabras en un párrafo.
+
+Desarrolla un programa en Python que cuente la frecuencia de cada palabra en un párrafo dado.
+El programa debe ignorar mayúsculas, minúsculas y signos de puntuación. 
+Solo se deben contar las palabras que tengan más de dos letras.
+El resultado debe mostrarse en orden descendente de frecuencia.
+
+"""
 
 import re
 
